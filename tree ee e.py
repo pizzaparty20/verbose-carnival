@@ -22,8 +22,8 @@ def tree_display(k):
 
             for i in positions:
 
-                z = random.randint(-2,2)
-                i2 = n - i + z
+                deviate = random.randint(-2,2)
+                i2 = n - i + deviate
                 if (leafs[i-1]==c  and  leafs[i+1] ==c):
                     leafs = leafs[:i] + ornament + leafs[i+1:]
                 if i2>=1 and i2<=n-2:
@@ -39,3 +39,4 @@ def tree_display(k):
 while True:
     n = int(input("Tree Height: "))
     tree_display(n)
+
